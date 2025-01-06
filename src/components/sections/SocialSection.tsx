@@ -4,7 +4,7 @@ const SocialSection = () => {
     return ( 
         <div className="flex flex-col gap-4">
             <h2 className="text-xl font-bold text-white">Social</h2>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid md:grid-cols-3 gap-4">
                 <div className="aspect-square border border-[#242424] rounded-xl p-6 flex flex-col justify-between">
                     <div className="flex flex-col gap-4">
                         <Image src="/tech/github.svg" alt="GitHub" width={48} height={48}/>
