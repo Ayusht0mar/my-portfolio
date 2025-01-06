@@ -4,6 +4,16 @@ import Image from "next/image";
 
 const component = [
     {
+        label: "Logo Marquee",
+        imgSrc: "/lab/componentscovers/logomarquee-cover.png",
+        componentLink: "/lab/logomarquee/"
+    },
+    {
+        label: "Kanban Board",
+        imgSrc: "/lab/componentscovers/kanbanboard-cover.png",
+        componentLink: "/lab/kanbanboard/"
+    },
+    {
         label: "Navbar",
         imgSrc: "/lab/componentscovers/navbar-cover.png",
         componentLink: "/lab/navbar/"
@@ -37,11 +47,11 @@ const component = [
 
 const LabPage = () => {
     return ( 
-        <div className="w-[80vw] mx-auto max-w-xl mt-10 space-y-4">
+        <div className="w-[90vw] md:w-[80vw] mx-auto max-w-xl mt-5 md:mt-10 space-y-4">
             <div className="flex text-xl items-center gap-2 pl-2">
                 <a href="/"><Home size={20}/></a>/ <p className="text-base">Lab</p>
             </div>
-            <div className="grid grid-cols-2 gap-5 pb-10">
+            <div className="grid  md:grid-cols-2 gap-5 pb-10">
                 {component.map(({ label, imgSrc, componentLink }) => (
                         <a href={componentLink} key={label} className= "rounded-xl border border-[#242424] p-2 space-y-2">
                             <Image src={imgSrc} alt={label} width={9999} height={9999} className="rounded-lg" />
