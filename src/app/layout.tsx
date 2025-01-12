@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "Ayush Tomar : Web Developer and Designer",
-  description: "I am a web developer and designer based in India. ",
+  description: "Ayush Tomar is a web developer and designer based in India, creating websites which aren't only fuctional but asthetic as well. He is currently building Doplo, the UI library and Inconcise, the ready to use components library.",
 };
 
 export default function RootLayout({
