@@ -33,6 +33,7 @@ const TechStackSection = () => {
                         <TechButton label="Neon" imgSrc="/tech/neon.svg"/>
                         <TechButton label="MySQL" imgSrc="/tech/mysql.svg"/>
                         <TechButton label="PostgreSQL" imgSrc="/tech/postgresql.svg"/>
+                        <TechButton label="Supabase" imgSrc="/tech/supabase.svg"/>
                     </div>
                 </div>
                 <div className="flex flex-col gap-2">
