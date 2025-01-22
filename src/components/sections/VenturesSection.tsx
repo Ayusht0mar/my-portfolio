@@ -1,11 +1,10 @@
 import Image from "next/image";
-import TechButton from "./TechButton";
 import { ArrowUpRight } from "lucide-react";
 
 const VenturesSection = () => {
     return ( 
         <div className="flex flex-col gap-4">
-            <h2 className="text-xl font-bold text-white">Ventures</h2>
+            <h2 className="text-xl font-bold text-white">Builds</h2>
             <div className="flex flex-col gap-2">
                 <div className="relative border border-[#242424] rounded-xl px-6 py-8 flex gap-6">
                     <Image src="/inconciselogo.svg" alt="Inconcise" width={32} height={32}/>
