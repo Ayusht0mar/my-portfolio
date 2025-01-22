@@ -1,7 +1,9 @@
+import LogoMarquee from "@/components/lab/LogoMarquee";
+
 const logoMarqueePage = () => {
     return ( 
         <div>
-                Logo Marquee
+            <LogoMarquee/>
         </div>
      );
 }
