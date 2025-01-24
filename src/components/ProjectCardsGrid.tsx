@@ -6,13 +6,19 @@ import Image from "next/image";
 const data = [
     { 
       imgSrc: "/project/airbnb-cover.png",
-      label: "Airbnb Clone"
+      label: "Airbnb Clone",
+      githublink: "https://github.com/Ayusht0mar/airbnb-clone",
+      livelink: "https://airbnb-clone-ayush.vercel.app/"
     },
     { imgSrc: "/project/miro-cover.png",
-      label: "Miro Clone"
+      label: "Miro Clone",
+      githublink: "https://github.com/Ayusht0mar/miro-clone",
+      livelink: "https://miro-clone-by-ayush.vercel.app/"
     },
     { imgSrc: "/project/discord-cover.png",
-      label: "Discord Clone"
+      label: "Discord Frontend",
+      githublink: "https://github.com/Ayusht0mar/discord-clone",
+      livelink: "https://discord-clone-ayush.vercel.app/"
     },
 ];
 
@@ -33,8 +39,8 @@ const ProjectCardGrid = () => {
                   </div>
                   <p className="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-sm rounded px-[9px] py-1.5">{data.label}</p>
                   <div className="absolute top-2 right-2 flex gap-2 text-white">
-                      <a href="" className="bg-black bg-opacity-60 p-1 rounded"><Globe size={18}/></a>
-                      <a href="" className="bg-black bg-opacity-60 p-1 rounded"><Github size={18}/></a>
+                      <a href={data.livelink} className="bg-black bg-opacity-60 p-1 rounded"><Globe size={18}/></a>
+                      <a href={data.githublink} className="bg-black bg-opacity-60 p-1 rounded"><Github size={18}/></a>
                   </div>
                 </div>
               ))}
