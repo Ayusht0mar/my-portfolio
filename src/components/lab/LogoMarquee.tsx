@@ -24,15 +24,14 @@ const LogoMarquee = () => {
         "/lab/logos/youtube.svg",
     ]
 
-    let [ref, {width}] = useMeasure();
+    const [ref, {width}] = useMeasure();
 
     const xTraslation = useMotionValue(0);
     
     useEffect(() => {
-        let controls;
-        let FinalPosition = -width/3 - 8;
+        const FinalPosition = -width/3 - 8;
 
-        controls = animate(xTraslation, [0,FinalPosition], {
+        const controls = animate(xTraslation, [0,FinalPosition], {
             ease: 'linear',
             duration: 12,
             repeat: Infinity,
