@@ -157,7 +157,7 @@ const Column = ({
   const filteredCards = cards.filter((c) => c.column === column);
 
   return (
-    <div className="bg-white border rounded-lg p-2">
+    <div className={`border rounded-lg p-2 ${active ? "bg-white" : "bg-white"}`}>
       <div className="mb-3 flex items-center justify-between">
         <h3 className="text-[#171717]">{title}</h3>
         <span className="rounded text-sm text-neutral-400">
@@ -180,9 +180,9 @@ const Column = ({
   );
 };
 
-type CardProps = CardType & {
-  handleDragStart: Function;
-};
+interface CardProps extends CardType {
+  handleDragStart: (e: DragEvent, card: CardType) => void;
+}
 
 const Card = ({ title, id, column, handleDragStart }: CardProps) => {
   return (
@@ -197,7 +197,7 @@ const Card = ({ title, id, column, handleDragStart }: CardProps) => {
         <p>{title}</p>
         <motion.div 
                 draggable="true"
-                onDragStart={(e) => handleDragStart(e, { title, id, column })}
+                onDragStart={(e) => handleDragStart(e as unknown as DragEvent, { title, id, column })}
                 className="cursor-grab absolute right-0 top-2 hidden group-hover:block text-zinc-400"
         >
           <div className="p-1 pr-2">

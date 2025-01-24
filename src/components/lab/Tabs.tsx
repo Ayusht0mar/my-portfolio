@@ -9,7 +9,7 @@ const tabs = [
 ];
 
 const Tabs = () => {
-    let [activeTab, setActiveTab] = useState(tabs[0].id);
+    const [activeTab, setActiveTab] = useState(tabs[0].id);
 
     return (
         <div className="w-fit mx-auto flex flex-col items-center">

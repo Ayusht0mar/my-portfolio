@@ -65,7 +65,7 @@ const NavMenu = () => {
             path1Controls.start(path1Variants.closed)
             path2Controls.start(path2Variants.closed)
         }
-    }, [menuOpen]);
+    }, [menuOpen, path1Controls, path1Variants.open, path1Variants.closed, path2Controls, path2Variants.open, path2Variants.closed]);
 
 
     return (
