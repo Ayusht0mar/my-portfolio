@@ -1,10 +1,11 @@
 import { Home } from "lucide-react";
+import Link from "next/link";
 
 const BlogPage = () => {
     return ( 
         <div className="w-[92vw] mx-auto max-w-2xl  my-[4vh] lg:my-[8vh]">
             <div className="flex text-xl items-center gap-2 pl-2">
-                <a href="/"><Home size={20}/></a>/ <p className="text-base">How Cookies cook?</p>
+                <Link href="/"><Home size={20}/></Link>/ <p className="text-base">How Cookies cook?</p>
             </div>
             <div className="mt-8">
                 <p>

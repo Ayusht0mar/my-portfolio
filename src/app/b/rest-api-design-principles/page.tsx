@@ -1,10 +1,11 @@
 import { Home } from "lucide-react";
+import Link from "next/link";
 
 const BlogPage = () => {
     return ( 
         <div className="w-[92vw] mx-auto max-w-2xl my-[8vh]">
             <div className="flex text-xl items-center gap-2 pl-2">
-                <a href="/"><Home size={20}/></a>/ <p className="text-base">Must known design principles for REST API</p>
+                <Link href="/"><Home size={20}/></Link>/ <p className="text-base">Must known design principles for REST API</p>
             </div>
             <div>
                 <h2 className="mt-8 text-zinc-200 mb-2">
@@ -59,7 +60,7 @@ const BlogPage = () => {
                         <span className="text-blue-400">401 Unauthorized </span>: Authentication required.
                     </li>
                     <li>
-                        <span className="text-blue-400"> 403 Forbidden </span>: Client is authenticated but doesn't have permission. 
+                        <span className="text-blue-400"> 403 Forbidden </span>: Client is authenticated but doesn&apos;t have permission. 
                     </li>
                     <li>
                         <span className="text-blue-400">404 Not Found </span>: Resource not found.

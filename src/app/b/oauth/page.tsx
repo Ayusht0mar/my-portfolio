@@ -1,10 +1,11 @@
 import { Home } from "lucide-react";
+import Link from "next/link";
 
 const BlogPage = () => {
     return ( 
         <div className="w-[92vw] mx-auto max-w-2xl my-[4vh] lg:my-[8vh]">
             <div className="flex text-xl items-center gap-2 pl-2 mb-4">
-                <a href="/"><Home size={20}/></a>/ <p className="text-base">OAuth Explained</p>
+                <Link href="/"><Home size={20}/></Link>/ <p className="text-base">OAuth Explained</p>
             </div>
             <div className="mt-8">
                 <p>
@@ -52,7 +53,7 @@ const BlogPage = () => {
                         <span className="text-blue-400">Refresh Token </span>: A token used to obtain new access tokens without requiring user interaction again.
                     </li>
                     <li>
-                        <span className="text-blue-400">Scopes </span>: Define the specific actions or data the app can access—for instance, "read email" or "post updates."
+                        <span className="text-blue-400">Scopes </span>: Define the specific actions or data the app can access—for instance, &quot;read email&quot; or &quot;post updates.&quot;
                     </li>
                 </ul>
 

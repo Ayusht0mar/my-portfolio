@@ -1,5 +1,6 @@
 import { Home } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 
 const component = [
@@ -49,7 +50,7 @@ const LabPage = () => {
     return ( 
         <div className="w-[90vw] md:w-[80vw] mx-auto max-w-xl mt-5 md:mt-10 space-y-4">
             <div className="flex text-xl items-center gap-2 pl-2">
-                <a href="/"><Home size={20}/></a>/ <p className="text-base">Lab</p>
+                <Link href="/"><Home size={20}/></Link>/ <p className="text-base">Lab</p>
             </div>
             <div className="grid  md:grid-cols-2 gap-5 pb-10">
                 {component.map(({ label, imgSrc, componentLink }) => (

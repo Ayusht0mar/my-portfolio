@@ -1,4 +1,5 @@
 import { Home } from "lucide-react";
+import Link from "next/link";
 
 interface LabFloatingButtonProps {
 
@@ -9,11 +10,11 @@ interface LabFloatingButtonProps {
 const LabFloatingButton = ({ sourceLink }: LabFloatingButtonProps) => {
     return ( 
         <div className="absolute p-2 rounded left-2 bottom-2 flex gap-2 text-sm items-center bg-black">
-            <a href="/">
+            <Link href="/">
                 <Home size={18}/>            
-            </a>
-            <a href="/lab/" >Lab</a>
-            <a href={sourceLink} target="_blank" className="text-white">Source</a>
+            </Link>
+            <Link href="/lab/" >Lab</Link>
+            <Link href={sourceLink} target="_blank" className="text-white">Source</Link>
 
         </div>
      );

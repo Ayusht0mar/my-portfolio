@@ -20,7 +20,7 @@ const VenturesSection = () => {
                     <Image src="/shortcutlogo.svg" alt="Shortcut" width={32} height={32}/>
                     <div>
                         <h3 className="text-[#9B9B9B] font-bold ">Shortcuts</h3>
-                        <p className="text-sm">Every Tool's shortcuts at one place.</p>
+                        <p className="text-sm">Every Tool&apos;s shortcuts at one place.</p>
                     </div>
                     <a href="https://shortcuts.vercel.app/" target="_blank" className="absolute right-2 top-2">
                         <ArrowUpRight color="#9B9B9B"/> 

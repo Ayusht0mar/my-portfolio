@@ -1,14 +1,15 @@
 import { Home } from "lucide-react";
+import Link from "next/link";
 
 const BlogPage = () => {
     return ( 
         <div className="w-[92vw] mx-auto max-w-2xl my-[8vh]">
             <div className="flex text-xl items-center gap-2 pl-2">
-                <a href="/"><Home size={20}/></a>/ <p className="text-base">The Journey of a Request: From Click to Response</p>
+                <Link href="/"><Home size={20}/></Link>/ <p className="text-base">The Journey of a Request: From Click to Response</p>
             </div>
             <div className="mt-8">
                 <p>
-                    Every click on a website triggers a chain of events that happen in milliseconds. Here’s a simplified breakdown of how a request travels:
+                    Every click on a website triggers a chain of events that happen in milliseconds. Here&apos;s a simplified breakdown of how a request travels:
                 </p>
                 <h2 className="mt-8 text-zinc-200 mb-2">
                     1. The Click
@@ -20,7 +21,7 @@ const BlogPage = () => {
                     2. DNS Lookup
                 </h2>
                 <p>
-                    The browser finds the server's IP address by checking its cache or querying a DNS server.
+                    The browser finds the server&apos;s IP address by checking its cache or querying a DNS server.
                 </p>
                 <h2 className="mt-8 text-zinc-200 mb-2">
                     3. Connection Setup
