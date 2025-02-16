@@ -6,7 +6,7 @@ const AboutSection = () => {
         <div className="flex flex-col sticky top-16 gap-4">
             <div className="flex flex-col gap-4">
                 <h1 className="text-white text-4xl font-bold">Ayush Tomar</h1>
-                <p>Brings ideas to life with code! <br /> I make websites that don&apos;t just work—they look good too. Right now, I’m working on <a href="https://doplo.ayushtomar.in/" target="_blanket" className="text-blue-500">Doplo</a>, a components library focused on accessibility, and <a href="https://www.inconcise.in/" target="_blanket" className="text-blue-500">Inconcise</a>, a ready-to-use components and templates collection built using doplo. Also, yes, I know how to center a div. </p>
+                <p>Brings ideas to life with code! <br /> I make websites that don&apos;t just work—they look good too. Right now, I’m working on <a href="https://doplo.ayushtomar.in/" target="_blanket" className="text-blue-500">Doplo</a>, a components library focused on accessibility, and <a href="https://www.inconcise.in/" target="_blanket" className="text-blue-500">Inconcise</a>, a ready-to-use components and templates collection. Also, yes, I know how to center a div. </p>
             </div>
             <div className="flex gap-4 items-center">
                 <div className="px-3 py-1.5 border flex gap-2 items-center rounded border-[#242424]">
